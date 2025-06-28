@@ -51,8 +51,6 @@ contract FundMeTest is Test {
     }
 
     function testFundUpdatesFundedDataStructure() public funded {
-        // The next TX will be sent by USER
-
         uint256 amountFunded = fundMe.getAddressToAmountFunded(USER);
         assertEq(amountFunded, SEND_VALUE);
     }
