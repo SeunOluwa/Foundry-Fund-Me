@@ -85,7 +85,7 @@ contract FundMeTest is Test {
         );
     }
 
-    function testWithdrawFronMultipleFunders() public funded {
+    function testWithdrawFromMultipleFunders() public funded {
         // Arrange
         uint160 numberOfFunders = 10;
         uint160 startingFunderIndex = 1;
@@ -112,7 +112,7 @@ contract FundMeTest is Test {
         );
     }
 
-    function testWithdrawFronMultipleFundersCheaper() public funded {
+    function testWithdrawFromMultipleFundersCheaper() public funded {
         // Arrange
         uint160 numberOfFunders = 10;
         uint160 startingFunderIndex = 1;
