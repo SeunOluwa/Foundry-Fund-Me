@@ -120,6 +120,10 @@ contract FundMe {
     function getOwner() external view returns (address) {
         return i_owner;
     }
+
+    function getFunders() external view returns (address[] memory) {
+        return s_funders;
+    }
 }
 
 // Concepts we didn't cover yet (will cover in later sections)

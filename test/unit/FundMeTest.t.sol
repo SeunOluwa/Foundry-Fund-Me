@@ -60,6 +60,11 @@ contract FundMeTest is Test {
         assertEq(funder, USER);
     }
 
+    function testGetFundersOfFundersArray() public funded {
+        address[] memory funders = fundMe.getFunders();
+        assert(funders.length > 0);
+    }
+
     function testOnlyOwnerCanWithdraw() public funded {
         vm.prank(USER);
         vm.expectRevert();
